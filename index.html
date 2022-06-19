@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starscape Calculation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Starscape Calculation Tool</h1>
+    <h3>Step 1: Configuration</h3>
+    <strong>Resources:</strong><br>
+    Current Reknite: <input id="r" type="number" min="0" value="0" /><br>
+    Current Korrelite: <input id="k" type="number" min="0" value="0" /><br>
+    Current Gellium: <input id="g" type="number" min="0" value="0" /><br>
+    Current Axnit: <input id="a" type="number" min="0" value="0" /><br>
+    Current Narcor: <input id="n" type="number" min="0" value="0" /><br>
+    Current Red Narcor: <input id="c" type="number" min="0" value="0" /><br>
+    Current Vexnium: <input id="v" type="number" min="0" value="0" /><br>
+    <br>
+    <p>
+        <strong>Resource price instructions:</strong><br>
+        If you are ordering the resource as a buy order, use the price listed in the sell tab of the market.<br>
+        If you are buying the resource directly, use the price listed in the buy tab of the market.
+    </p>
+    <strong>Market:</strong><br>
+    Reknite Price: <input id="rp" type="number" min="0.1" value="4" step="0.1" /><br>
+    Order Type: <select id="ro"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Korrelite Price: <input id="kp" type="number" min="0.1" value="3" step="0.1" /><br>
+    Order Type: <select id="ko"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Gellium Price: <input id="gp" type="number" min="0.1" value="5" step="0.1" /><br>
+    Order Type: <select id="go"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Axnit Price: <input id="ap" type="number" min="0.1" value="14" step="0.1" /><br>
+    Order Type: <select id="ao"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Narcor Price: <input id="np" type="number" min="0.1" value="20" step="0.1" /><br>
+    Order Type: <select id="no"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Red Narcor Price: <input id="cp" type="number" min="0.1" value="36" step="0.1" /><br>
+    Order Type: <select id="co"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Vexnium Price: <input id="vp" type="number" min="0.1" value="200" step="0.1" /><br>
+    Order Type: <select id="vo"><option value="o">Order</option><option value="d">Direct</option></select><br>
+    Listing Fee: <input id="lf" type="number" min="0" value="250" step="1" /><br>
+    Market Tax: (only applies to orders) <input id="mt" type="number" min="0" value="2.75" step="0.1" />%<br>
+    <br>
+    <strong>Item Details:</strong><br>
+    Reknite Cost: <input id="rc" type="number" min="0" value="0" step="1" /><br>
+    Korrelite Cost: <input id="kc" type="number" min="0" value="0" step="1" /><br>
+    Gellium Cost: <input id="gc" type="number" min="0" value="0" step="1" /><br>
+    Axnit Cost: <input id="ac" type="number" min="0" value="0" step="1" /><br>
+    Narcor Cost: <input id="nc" type="number" min="0" value="0" step="1" /><br>
+    Red Narcor Cost: <input id="cc" type="number" min="0" value="0" step="1" /><br>
+    Vexnium Cost: <input id="vc" type="number" min="0" value="0" step="1" /><br>
+    <h3>Step 2: Stats</h3>
+    <button id="calc" onclick="calculate()">Calculate</button>
+    <p id="stats"></p>
+    <script src="script.js"></script>
+</body>
+</html>
